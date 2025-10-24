@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/pvp.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor:Player VS Player</title>
+</head>
+<body>
+  <div id="player1">
+    <button onclick="player1(this)" value="rock" name="props">🪨</button>
+    <button onclick="player1(this)" value="paper" name="props">📄</button>
+    <button onclick="player1(this)" value="scissor" name="props">✂️</button>
+  </div>
+  <h1 id="p1">Player 1</h1>
+  <h1 id="p1_choice" style="visibility:hidden"></h1>
+  <div id="msgbox" style="visibility:hidden">
+    <p id="msg">Player 1 wins</p>
+    <button onclick="window.location.href='index.html'" id="home">Home</button>
+    <button onclick="window.location.href='pvp.html'" id="again">Play Again</button>
+  </div>
+  <h1 id="p2_choice" style="visibility:hidden"></h1>
+  <h1 id="p2">Player 2</h1>
+  <div id="player2">
+    <button onclick="player2(this)" value="rock" name="props">🪨</button>
+    <button onclick="player2(this)" value="paper" name="props">📄</button>
+    <button onclick="player2(this)" value="scissor" name="props">✂️</button>
+  </div>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.log("Service Worker failed", err));
+  }
+  </script>
+</body>
+<script src="scripts/pvp.js"></script>
+</html>

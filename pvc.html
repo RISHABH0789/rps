@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/pvc.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor:Player VS Computer</title>
+</head>
+<body>
+  <p id="computer">Computer</p>
+  <h1 id="response" style="visibility:hidden"></h1>
+  <div id="msgbox" style="visibility:hidden">
+    <p id="msg"></p>
+    <button onclick="window.location.href='index.html'" id="home">Home</button>
+    <button onclick="window.location.href='pvc.html'" id="again">Play Again</button>
+  </div>
+  <h1 id="user_option" style="visibility:hidden"></h1>
+  <p style="visibility:hidden" id="you">You</p>
+  <div id="option">
+    <button value="rock" name="props" onclick="game(this)">🪨</button>
+    <button value="paper" name="props" onclick="game(this)">📄</button>
+    <button value="scissor" name="props" onclick="game(this)">✂️</button>
+  </div>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.log("Service Worker failed", err));
+  }
+  </script>
+</body>
+<script src="scripts/pvc.js"></script>
+</html>

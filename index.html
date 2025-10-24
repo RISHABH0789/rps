@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="window.location.href='pvc.html'" id="pvc">Player VS Computer</button>
+    <button onclick="window.location.href='names.html'" id="pvp">Player VS Player</button>
+  </div>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.log("Service Worker failed", err));
+  }
+  </script>
+</body>
+</html>
