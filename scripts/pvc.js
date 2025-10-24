@@ -57,7 +57,7 @@ function game(button){
             document.getElementById("msgbox").style.visibility = "visible";
             document.getElementById("msg").style.color = "#FFD600";
             document.getElementById("msg").textContent = "It's Draw!";
-        }, 3000);
+        }, 2000);
     }
     else if (user == 1 && computer == 3 || user == 2 && computer == 1 || user == 3 && computer == 2) {
         setTimeout(() => {
@@ -69,7 +69,7 @@ function game(button){
             document.getElementById("msgbox").style.visibility = "visible";
             document.getElementById("msg").style.color = "#00C853";
             document.getElementById("msg").textContent = "You Win!";
-        }, 3000);
+        }, 2000);
     }
     else{
         setTimeout(() => {
@@ -81,6 +81,6 @@ function game(button){
             document.getElementById("msgbox").style.visibility = "visible";
             document.getElementById("msg").style.color = "#E53935";
             document.getElementById("msg").textContent = "You Lose!";
-        }, 3000);
+        }, 2000);
     }
 }
