@@ -2,7 +2,7 @@
   "name": "Cyber Clash",
   "short_name": "Cyber Clash",
   "description": "Play Cyber Clash: Rock Paper Scissor in futuristic style, Player vs Computer or Player vs Player",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#0D1117",
   "theme_color": "#0D1117",
@@ -18,5 +18,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "lang": "en"
 }
