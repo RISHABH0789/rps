@@ -79,10 +79,6 @@ body{
   border-radius: 20px;
   border: 2px solid #C0C0C0;
 }
-#player1 button:hover,#player2 button:hover{
-  transform: scale(1.1);
-  transition: 0.3;
-}
 #msgbox {
   font-family: Monospace;
   font-size: 50px;
